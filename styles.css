@@ -70,6 +70,7 @@ body {
 
 #credits-p {
     font-style: italic;
+    font-size: smaller;
     color: var(--light-color);
     position: absolute;
     right: 0.1in;
@@ -78,7 +79,6 @@ body {
 }
 
 #credits-p > a {
-    font-size: smaller;
     color: var(--light-color);
     text-decoration: underline;
 }
