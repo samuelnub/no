@@ -4,8 +4,8 @@
     --shadow-color: rgba(0, 0, 0, 0.3);
     --light-color: rgb(240, 240, 240);
     --transition-time: 0.2s;
-    --button-size: 1in;
-    --font-size: 1in;
+    --button-size: 15vmin;
+    --font-size: 10vmin;
     --text-padding: 0.2in;
 }
 
@@ -47,6 +47,7 @@ body {
 }
 
 #no-button {
+    z-index: 1;
     position: absolute;
     background-color: var(--button-color);
     text-align: center;

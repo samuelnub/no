@@ -1,5 +1,8 @@
 window.onload = () => {
-    const noAudio = document.getElementById("no-audio");
+    const noAudioFilename = "no.ogg";
+    const noAudio = new Howl({
+        src: [noAudioFilename]
+    });
     noAudio.volume = 0.5;
     const noP = document.getElementById("no-p");
     const noButton = document.getElementById("no-button");
@@ -38,12 +41,13 @@ window.onload = () => {
 
     function activated() {
         console.log("AAA");
-        noAudio.play();
+        if(!noAudio.playing()) {
+            noAudio.play();
+        }
         noP.innerHTML += appendPText;
     }
     function deactivated() {
-        noAudio.pause();
-        noAudio.currentTime = 0;
+        noAudio.stop();
         if(noP.innerHTML !== originalPText) {
             noP.innerHTML = noP.innerHTML.slice(0, noP.innerHTML.length-1);
         }
