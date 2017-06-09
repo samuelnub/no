@@ -68,3 +68,17 @@ body {
     box-shadow: 0px calc(var(--button-size) / 4) 0.3in var(--shadow-color);
 }
 
+#credits-p {
+    font-style: italic;
+    color: var(--light-color);
+    position: absolute;
+    right: 0.1in;
+    bottom: 0.1in;
+    margin: 0px;
+}
+
+#credits-p > a {
+    font-size: smaller;
+    color: var(--light-color);
+    text-decoration: underline;
+}

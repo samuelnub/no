@@ -12,8 +12,14 @@ window.onload = () => {
     noButton.addEventListener("mousedown", (e) => {
         buttonActive = true;
     });
+    noButton.addEventListener("touchstart", (e) => {
+        buttonActive = true;
+    });
 
     noButton.addEventListener("mouseup", (e) => {
+        buttonActive = false;
+    });
+    noButton.addEventListener("touchend", (e) => {
         buttonActive = false;
     });
     noButton.addEventListener("mouseleave", (e) => {
